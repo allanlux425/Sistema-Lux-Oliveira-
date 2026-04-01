@@ -1,0 +1,19 @@
+footer {
+    background-color: #f4f4f4; /* mesma cor do background do sistema */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    margin-top: 40px; /* espaço entre main e footer */
+}
+
+footer img#logo-footer {
+    max-width: 150px; /* ajusta o tamanho do logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}

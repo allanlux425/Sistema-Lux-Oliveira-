@@ -3,43 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <?php include "link_css.php";?>
     <title>Login</title>
     
 </head>
 <body>
+<?php include("menu.php"); ?>    
 <main>
                
         <h2>Recuperar a senha</h2>
 
         <form action="<?php $_SERVER["PHP_SELF"] ?>" method="get">
-
-            <label for="login">Insira o seu login</label>
-            <input type="text" name="login" id="login">
-            <button type="submit" name="btn-entrar">Recuperar Senha</button>
+           
+               
+                    <label for="login">Insira o seu login</label>
+                    <input type="text" name="login" id="login">
+                
+            <div class="btn-container">     
+                <button type="submit">Recuperar Senha</button>
+            </div>     
         </form>
 
          <?php
             if(isset ($_GET['login'])){
-                    
+                   
                 include("recupera_senha.php");
 
             }
          
          ?>
-        <a href="livros_cadastrados.php">Livros cadastrados</a>|
-
-        <a href="tela_livro_secao.php">Buscar os livros por categorias</a>|
-
-        <a href="index.php">HOME</a>|
-        
-
-        
-        
-        
-
-
-
     </main>
+<?php include_once "footer.php";?>    
 </body>
 </html>

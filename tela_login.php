@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <?php include "link_css.php";?>
     <title>Login</title>
     
 </head>
 <body>
+<?php include("menu.php");?>
 <main>
                 <?php 
                             
@@ -18,32 +19,22 @@
                             }
                 ?>       
 
-
-        <h2>Bem vindo ao Sistema de cadastro Diego's Oliveira</h2>
-
+         
+        <h2>Bem vindo ao Sistema de entregas</h2>
+       
         <form action="login.php" method="post">
 
             <label for="login">Insira o seu login</label>
             <input type="text" name="login" id="login">
             <label for="senha">Insira a sua senha</label>
             <input type="password" name="senha" id="senha">
-            <button type="submit" name="btn-entrar">Acessar sua livraria</button>
+            <p>
+                <div class="btn-container"> 
+                <button type="submit" name="btn-entrar">Acessar suas entregas</button>
+                </div>
+            </p>
         </form>
-
-        <a href="livros_cadastrados.php">Livros cadastrados</a>|
-
-        <a href="tela_livro_secao.php">Buscar os livros por categorias</a>|
-
-        <a href="tela_cad_usuario.php">Cadastre-se</a>|
-        
-        <a href="tela_recupera_senha.php">Recuperar Senha</a>
-
-        
-        
-        
-
-
-
-    </main>
+</main>
+<?php include_once "footer.php";?>    
 </body>
 </html>

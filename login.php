@@ -48,7 +48,7 @@
                             $_SESSION['logado'] = true;
                             $_SESSION['id_usuario'] = $dados['id_usuario'];
                             
-                            header('location:tela_cad_livro.php');
+                            header('location:tela_cad_produtos.php');
                         }else{
 
                         $erros[] = "Usuário inexistente";
@@ -58,7 +58,7 @@
                             }
                         }
                         else{
-                            echo "Erro".mysqli_connect_error($conexao);
+                             echo "Erro".mysqli_connect_error($conexao);
                         }
                         
                     }

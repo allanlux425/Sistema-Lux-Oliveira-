@@ -8,6 +8,7 @@
         $nome = $_GET["nome"];
         $login  = $_GET["login"];
         $senha = $_GET["senha"];
+        $email = $_GET["email"];
         
         $msg = array();
         
@@ -27,7 +28,7 @@
             }
         }else{
                
-            header("location:include_cad_user.php?nome=$nome&senha=$senha&login=$login");
+            header("location:include_cad_user.php?nome=$nome&senha=$senha&login=$login&email=$email");
         }
             
         

@@ -1,0 +1,25 @@
+div.tabela-produtos table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+div.tabela-produtos table th,
+div.tabela-produtos table td {
+    border: 1px solid #ccc !important;
+    padding: 10px;
+    text-align: left;
+}
+
+div.tabela-produtos thead {
+    background-color: #333;
+    color: white;
+}
+
+div.tabela-produtos tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+div.tabela-produtos tbody tr:hover {
+    background-color: #ddd;
+}

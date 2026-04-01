@@ -1,9 +1,3 @@
-
 <?php
-     
-     include ("tela_login.php");
-     
-    
-   
-    
+include "tela_login.php";
 ?>
